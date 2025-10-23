@@ -60,6 +60,9 @@ tasks.named("build") {
 		trigger.writeText(Date().time.toString())
 	}
 }
+tasks.named<JavaExec>("bootRun"){
+	jvmArgs = listOf("-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=*:5005") //porta do contenhe 5005
+}
 
 tasks.withType<Test> {
 	useJUnitPlatform()
