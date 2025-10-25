@@ -49,7 +49,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 Antes de começar, certifique-se de ter instalado:
 
-- [Java JDK 17+](https://www.oracle.com/java/technologies/downloads/)
+- [Java JDK 21+](https://www.oracle.com/java/technologies/downloads/)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [Git](https://git-scm.com/)
 
@@ -94,17 +94,6 @@ chmod +x gradlew
 ```bash
 gradlew.bat build
 gradlew.bat bootRun
-```
-
-A API estará disponível em `http://localhost:8080`
-
-## 🚀 Como Usar
-
-### Acessar Documentação Swagger
-
-Acesse a documentação interativa da API em:
-```
-http://localhost:8080/swagger-ui.html
 ```
 
 ### Exemplo de Requisições
@@ -185,8 +174,8 @@ src/
 │   │           ├── config/          # Configurações
 │   │           └── exception/       # Tratamento de exceções
 │   └── resources/
-│       ├── application.properties   # Configurações da aplicação
-│       └── application-dev.properties
+│       ├── application.yml   # Configurações da aplicação
+│       └── application-dev.yml
 ├── test/
 │   └── java/                        # Testes unitários e integração
 ├── build.gradle                      # Configuração do Gradle
@@ -199,7 +188,7 @@ src/
 ### Dockerfile
 
 ```dockerfile
-FROM openjdk:17-jdk-slim
+FROM openjdk:21-jdk-slim
 WORKDIR /app
 COPY build/libs/*.jar app.jar
 EXPOSE 8080
@@ -234,7 +223,7 @@ open build/reports/jacoco/test/html/index.html
 
 ## 🔧 Configuração
 
-Edite o arquivo `application.properties` para configurar:
+Edite o arquivo `application.yml` para configurar:
 
 ```properties
 # Porta da aplicação
