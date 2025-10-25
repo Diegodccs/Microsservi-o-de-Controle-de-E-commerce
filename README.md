@@ -254,7 +254,7 @@ Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue
 
 **Se este projeto foi útil, deixe uma ⭐!**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](seu-linkedin)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](seu-github)
+[![LinkedIn](https://www.linkedin.com/in/diego-camargo-88aa34294/)](seu-linkedin)
+[![GitHub](https://github.com/Diegodccs)](seu-github)
 
 </div>
